@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b14">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Ryanto">
+<title>Ryanto Trading — Read the market. Trade with discipline.</title>
+<meta name="description" content="Ryanto Trading is a trading academy in Kerala teaching forex, stocks and crypto with a focus on risk management and process.">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ryanto Trading">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Ryanto Trading — Read the market. Trade with discipline.">
+<meta property="og:description" content="Ryanto Trading is a trading academy in Kerala teaching forex, stocks and crypto with a focus on risk management and process.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ryanto Trading: Read the market. Trade with discipline.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ryanto Trading — Read the market. Trade with discipline.">
+<meta name="twitter:description" content="Ryanto Trading is a trading academy in Kerala teaching forex, stocks and crypto with a focus on risk management and process.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.png">
+<meta name="twitter:image:alt" content="Ryanto Trading: Read the market. Trade with discipline.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Ryanto Trading",
+  "description": "Ryanto Trading is a trading academy in Kerala teaching forex, stocks and crypto with a focus on risk management and process.",
+  "url": "https://YOUR-DOMAIN.com/",
+  "image": "https://YOUR-DOMAIN.com/og-image.png",
+  "telephone": "+91 00000 00000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "YOUR STREET ADDRESS",
+    "addressLocality": "Nilambur",
+    "addressRegion": "Kerala",
+    "postalCode": "000000",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": ["https://www.instagram.com/yourhandle/"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+
+<header class="site-header" id="header">
+  <div class="offer-bar" id="offerBar">
+    <p><span id="offerText"></span> <a href="#book">Book now</a></p>
+    <button type="button" class="offer-close" id="offerClose" aria-label="Close offer">&times;</button>
+  </div>
+  <nav class="nav" aria-label="Main">
+    <a href="#top" class="logo" aria-label="Ryanto Trading, home">
+      <span class="logo-mark" aria-hidden="true"><span>R</span></span>Ryanto
+    </a>
+    <div class="links">
+      <a href="#courses">Courses</a>
+      <a href="#story">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book a demo</a>
+      <a href="#find">Find us</a>
+    </div>
+    <div class="nav-right">
+      <button type="button" class="btn btn-gold cart-btn" id="cartOpen" aria-haspopup="dialog" aria-controls="cart">Your order <span class="count" id="cartCount" aria-hidden="true">0</span><span class="sr" id="cartCountSr">, 0 items</span></button>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <a href="#courses">Courses</a>
+  <a href="#story">About</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#book">Book a demo</a>
+  <a href="#find">Find us</a>
+  <a href="#contact">Contact</a>
+  <button type="button" class="btn btn-gold" id="menuCart">Your order</button>
+</div>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-media" id="media">
+      <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2400&q=80" alt="Candlestick chart on a trading screen" fetchpriority="high">
+    </div>
+    <div class="hero-inner">
+      <h1 id="hero-title">
+        <span class="line"><span>Read the market.</span></span>
+        <span class="line"><span>Trade with discipline.</span></span>
+      </h1>
+      <p class="lede">Structured training in forex, stocks and crypto, built on chart analysis and risk management, taught live from Kerala.</p>
+      <div class="actions">
+        <a href="#courses" class="btn btn-gold">Explore courses</a>
+        <a href="#book" class="btn btn-ghost">Book a free demo class</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="featured" aria-labelledby="feat-title">
+    <div class="feature-stage" id="featStage">
+      <div class="feature-photo" id="featPhoto"><img src="https://images.unsplash.com/photo-1535320903710-d993d3d77d29?auto=format&fit=crop&w=2400&q=80" alt="Forex charts on a monitor"></div>
+      <h2 class="feature-title" id="feat-title">Forex Foundations</h2>
+      <div class="feature-copy" id="featCopy">
+        <div class="wrap">
+          <p>Our flagship course. Eight weeks of live classes covering currency pairs, chart reading, entries and exits, and a risk plan you can follow from day one.</p>
+          <div class="price"><span id="featPrice">₹14,999</span> <small>8 weeks, live online</small></div>
+          <div><button type="button" class="btn btn-gold" id="featAdd">Add to order</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section courses" id="courses" aria-labelledby="courses-title">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">Courses</p>
+        <h2 class="title" id="courses-title">Pick where to start</h2>
+        <p class="sub">Each course is taught live, with recordings and chart reviews included.</p>
+      </div>
+      <div class="tabs" id="courseTabs" role="group" aria-label="Filter courses"></div>
+      <div class="grid" id="courseGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="story" aria-labelledby="story-title">
+    <div class="wrap story-grid">
+      <div class="story-img reveal"><img data-par src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Students studying together" loading="lazy"></div>
+      <div class="story-text reveal">
+        <p class="kicker">About us</p>
+        <h2 class="title" id="story-title">Trading taught as a craft</h2>
+        <p class="lead">Ryanto Trading began in Kerala with one rule: protect your capital first.</p>
+        <p>We teach forex, stocks and crypto the way a trade should be run, with a plan, a stop and a journal. No signals, no shortcuts and no promises of quick profits.</p>
+        <p>Small batches, live classes and honest feedback on your own charts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">Reviews</p>
+        <h2 class="title" id="reviews-title">What students say</h2>
+      </div>
+      <div class="review-grid" id="reviewGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="book" aria-labelledby="book-title">
+    <div class="wrap find-grid">
+      <div class="find-info reveal">
+        <p class="kicker">Free demo class</p>
+        <h2 class="title" id="book-title">Reserve your seat</h2>
+        <p class="sub">Pick a date and time. We will confirm it on WhatsApp.</p>
+      </div>
+      <form class="book-form reveal" id="bookForm" novalidate>
+        <div class="field"><label for="bkName">Your name</label><input id="bkName" type="text" maxlength="40" autocomplete="name" required></div>
+        <div class="field-row">
+          <div class="field"><label for="bkDate">Date</label><input id="bkDate" type="date" required></div>
+          <div class="field"><label for="bkTime">Time</label><select id="bkTime" required></select></div>
+        </div>
+        <div class="field"><label for="bkNote">Note (optional)</label><textarea id="bkNote" maxlength="120" rows="3" autocomplete="off"></textarea></div>
+        <button type="submit" class="btn btn-gold" id="bkSend">Book on WhatsApp</button>
+        <p class="hint" id="bkHint" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section alt" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="kicker">Instagram</p>
+        <h2 class="title" id="gallery-title">Follow along</h2>
+        <a href="#" class="btn btn-ghost" id="igFollow" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+      </div>
+      <div class="ig-grid" id="igGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="find" aria-labelledby="find-title">
+    <div class="wrap find-grid">
+      <div class="find-info reveal">
+        <p class="kicker">Find us</p>
+        <h2 class="title" id="find-title">Visit the academy</h2>
+        <dl class="details">
+          <div><dt>Address</dt><dd id="findAddress">Nilambur, Kerala, India</dd></div>
+          <div><dt>Hours</dt><dd><span id="findHours">Monday to Saturday, 9:00 am to 6:00 pm</span> <span class="badge" id="openBadge" role="status"></span></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+910000000000" id="findPhone" class="selectable">+91 00000 00000</a><button type="button" class="copy-btn" id="copyPhone" aria-label="Copy phone number">Copy</button></dd></div>
+        </dl>
+        <div class="actions">
+          <a href="#" class="btn btn-gold" id="directions" target="_blank" rel="noopener noreferrer">Get directions</a>
+          <a href="tel:+910000000000" class="btn btn-ghost" id="callUs">Call us</a>
+        </div>
+        <button type="button" class="copy-link" id="copyMap">Copy map link</button>
+      </div>
+      <div class="map reveal">
+        <iframe id="mapFrame" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Map showing the location of Ryanto Trading" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta" id="enrol" aria-labelledby="cta-title">
+    <div class="wrap reveal">
+      <h2 id="cta-title">Sit in on a free demo class</h2>
+      <p>See how we teach before you commit. Pick a slot and we will confirm it on WhatsApp.</p>
+      <div class="actions">
+        <a href="#book" class="btn btn-gold">Book a free demo class</a>
+        <a href="#contact" class="btn btn-ghost" id="ctaWa">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true"><span>R</span></span>Ryanto</a>
+        <p>A trading academy in Kerala, India. Forex, stocks and crypto, taught with risk first.</p>
+        <button type="button" class="btn btn-ghost install-btn" id="installApp" hidden>Install app</button>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#featured">Featured course</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#story">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#book">Book a demo</a></li>
+          <li><a href="#find">Find us</a></li>
+          <li><a href="#enrol">Free demo class</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="tel:+910000000000" id="footPhone" class="selectable">+91 00000 00000</a></li>
+          <li>Kerala, India</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="#" rel="noopener noreferrer" id="footInsta" target="_blank">Instagram</a></li>
+          <li><a href="#" rel="noopener">YouTube</a></li>
+          <li><a href="#" rel="noopener">Telegram</a></li>
+          <li><a href="#" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Ryanto Trading. All rights reserved.</span>
+      <span>Education only, not investment advice. Trading involves risk of loss.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="backdrop" id="backdrop"></div>
+<aside class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+  <div class="cart-head">
+    <h2 id="cart-title">Your order</h2>
+    <button type="button" class="cart-close" id="cartClose" aria-label="Close order panel">&times;</button>
+  </div>
+  <div class="cart-body">
+    <ul class="cart-list" id="cartList"></ul>
+    <p class="cart-empty" id="cartEmpty">Your order is empty.<br><a href="#courses" id="browse">Browse courses</a></p>
+  </div>
+  <div class="cart-foot">
+    <div class="fields">
+      <label for="custName">Your name</label>
+      <input id="custName" type="text" maxlength="40" autocomplete="name">
+      <label for="custNote">Note (optional)</label>
+      <textarea id="custNote" maxlength="120" rows="2" autocomplete="off"></textarea>
+    </div>
+    <p class="ref"><span>Order reference</span><strong id="orderRef">RYN-0000</strong></p>
+    <div class="total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+    <button type="button" class="btn btn-gold" id="payUpi" disabled>Pay with UPI</button>
+    <button type="button" class="btn btn-ghost" id="sendWa" disabled>Send order on WhatsApp</button>
+    <p class="hint" id="payHint" role="status"></p>
+  </div>
+</aside>
+<div class="toast-wrap"><div class="toast" id="toast" role="status" aria-live="polite"></div></div>
+
+</body>
+</html>
